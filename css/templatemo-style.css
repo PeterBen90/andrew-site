@@ -378,6 +378,7 @@ a:focus {
 
 #about .about-img {
   background: url('../images/interior.jpg') no-repeat;
+  min-height: 45vh !important;
 }
 
 #about .about-thumb,
