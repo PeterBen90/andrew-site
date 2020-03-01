@@ -477,16 +477,16 @@ a:focus {
    Quotes section              
 -----------------------------------------*/
 
-/* #quotes {
+#quotes {
   background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
   background-size: cover;
   background-position: center center;
   color: #ffffff;
   position: relative;
   padding: 100px 0px;
-} */
+}
 
-#quotes {
+/* #quotes {
   color: #ffffff;
   padding: 100px 0px;
   display: -moz-flex;
@@ -504,7 +504,7 @@ a:focus {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-}
+} */
 
 #quotes .container {
   -moz-transform: scale(1);
