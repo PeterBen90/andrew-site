@@ -730,6 +730,16 @@ footer {
   .section-btn {
     padding: 15px;
   }
+
+  .experience-img {
+    min-height: 35vh;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .experience-img {
+    min-height: 42vh;
+  }
 }
 
 .head {
