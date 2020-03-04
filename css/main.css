@@ -739,6 +739,10 @@ footer {
   .form {
     padding: 20px !important;
   }
+
+  .send-btn {
+    margin-top: 40px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
