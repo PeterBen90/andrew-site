@@ -768,8 +768,8 @@ footer {
 }
 
 .form {
-  padding-bottom: 60px;
-  padding-top: 20px;
+  padding: 22px 32px 22px 32px;
+  min-height: 75vh;
 }
 
 #about .about-thumb {
