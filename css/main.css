@@ -723,8 +723,7 @@ footer {
 
   #contact .contact-form,
   #contact .contact-thumb {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 20px;
     min-height: 75vh;
     margin-bottom: 0;
   }
