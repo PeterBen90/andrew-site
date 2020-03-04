@@ -726,6 +726,7 @@ footer {
     padding-left: 10px;
     padding-right: 10px;
     min-height: 75vh;
+    margin-bottom: 0;
   }
 
   .section-btn {
@@ -782,4 +783,10 @@ footer {
 
 .google-business:hover {
   color: #999;
+}
+
+@media only screen and (min-width: 1200px) {
+  #contact .contact-thumb {
+    margin-bottom: 0;
+  }
 }
