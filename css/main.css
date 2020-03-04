@@ -563,16 +563,16 @@ a:focus {
 }
 
 #contact input[type='submit'] {
-  background: #ffffff;
-  border: 2px solid transparent;
+  /* background: #ffffff; */
+  border: 3px solid #e3ae57;
   border-radius: 40px;
-  color: #161616;
+  color: #e3ae57;
   padding-bottom: 10px;
+  font-weight: bold;
 }
 
 #contact input[type='submit']:hover {
-  background: transparent;
-  border-color: #ffffff;
+  background: #e3ae57;
   color: #ffffff;
 }
 
@@ -734,6 +734,10 @@ footer {
   .experience-img {
     min-height: 35vh;
   }
+
+  .form {
+    padding: 20px !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -743,7 +747,7 @@ footer {
 }
 
 .head {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 #service p {
@@ -761,4 +765,20 @@ footer {
 
 .media {
   margin-top: 2px;
+}
+
+.form {
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
+#about .about-thumb {
+  text-align: center;
+}
+.google-business {
+  font-weight: bold;
+}
+
+.google-business:hover {
+  color: #999;
 }
