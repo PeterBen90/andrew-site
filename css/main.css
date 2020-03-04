@@ -521,6 +521,10 @@ a:focus {
   margin-bottom: 95px;
 }
 
+#contact .contact-thumb {
+  padding-bottom: 200px;
+}
+
 #contact .contact-img {
   background: url('../images/andrew.jpg') no-repeat;
   min-height: 75vh;
