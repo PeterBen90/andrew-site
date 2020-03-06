@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" />
 
     <link
       href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"
@@ -75,16 +76,10 @@
           <div class="col-md-6 col-sm-6">
             <div class="home-thumb">
               <div class="section-title">
-                <h4 class="wow fadeInUp head" data-wow-delay="0.3s">
-                  Let us compete for your business </br>
-                  <a
-                    class="google-business"
-                    target="_blank"
-                    href="https://www.google.ca/search?q=one+percent+guys&rlz=1C5CHFA_enCA782CA782&oq=one+percent+guys+&aqs=chrome..69i57j69i60l3.3486j0j4&sourceid=chrome&ie=UTF-8#lrd=0x882b3336fae60e37:0x606b45f4932dc845,1"
-                    >Click here to find out more</a
-                  >
+                <h4 class="wow fadeInUp heading" data-wow-delay="0.3s">
+                  Let us compete for your business!
                 </h4>
-                <h1 class="wow fadeInUp" data-wow-delay="0.6s">
+                <h1 class="wow fadeInUp get-started" data-wow-delay="0.6s">
                   The <strong>Only</strong> Pre-Listing Orientation You'll Ever
                   Need
                 </h1>
@@ -94,13 +89,53 @@
                   offer/negotiation process? Get all the answers + WHY you
                   should contact our TEAM to compete for your lisitng.
                 </p>
-
-                <a
-                  href="#about"
-                  class="wow fadeInUp smoothScroll section-btn btn btn-success"
-                  data-wow-delay="1.4s"
-                  >Get Started</a
+            <h1 class="wow fadeInUp" data-wow-delay="0.6s">
+              Get Started
+            </h1>
+            <div id="contact-form">
+              <form id="myForm2">
+                <div class="wow fadeInUp" data-wow-delay="1s">
+                  <input
+                    name="fullname"
+                    type="text"
+                    class="form-control"
+                    id="fullname"
+                    placeholder="Name"
+                  />
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="1.2s">
+                  <input
+                    name="email"
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="wow fadeInUp" data-wow-delay="1.2s">
+                  <input
+                    name="phone"
+                    type="phone"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Phone Number"
+                  />
+                </div>
+                <div
+                  class="wow fadeInUp col-md-6 col-sm-8 send-btn"
+                  data-wow-delay="1.6s"
                 >
+                  <input
+                    name="submit"
+                    type="submit"
+                    class="form-control"
+                    id="submit"
+                    value="SEND"
+                  />
+                </div>
+              </form>
+            </div>
+
               </div>
             </div>
           </div>
@@ -119,11 +154,63 @@
                 <h1>Download Pre-Listing Orientation</h1>
               </div>
               <div class="wow fadeInUp" data-wow-delay="0.8s">
-                <a
-                  href="/images/One Percent Guys_ Pre-Listing Orientation .pdf"
-                  download
-                  ><i class="fa fa-cloud-download" aria-hidden="true"></i
-                ></a>
+                    <a
+                    class="wow fadeInUp fbtn section-btn btn btn-success"
+                    data-wow-delay="1.4s"
+                    data-fancybox
+                    data-src="#hidden-content-2"
+                    href="javascript:;"
+                    >Download</a
+                  >
+  
+                  <div style="display: none;" id="hidden-content-2">
+                    <h2>Contact</h2>
+                    <form class="contact__form" method="post" action="mail.php">
+                      <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                         Your message was sent successfully.
+                      </div>
+                      <div>
+                        <input
+                          name="fullname"
+                          type="text"
+                          class="modal-form"
+                          id="modal-name"
+                          placeholder="Name"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <input
+                          name="email"
+                          type="email"
+                          class="modal-form"
+                          id="modal-email"
+                          placeholder="Email"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <input
+                          name="phone"
+                          type="phone"
+                          class="modal-form"
+                          id="modal-phone"
+                          placeholder="Phone Number"
+                          required
+                        />
+                      </div>
+                      <div>
+                        <input
+                          name="submit"
+                          type="submit"
+                          class="modal-btn btn btn-success"
+                          id="submit"
+                          value="SEND"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                  <!-- <a id="download-btn" href="/images/One Percent Guys_ Pre-Listing Orientation .pdf" download>CLICK</a> -->
               </div>
             </div>
           </div>
@@ -395,7 +482,13 @@
             </h3>
             <p class="wow fadeInUp" data-wow-delay="1s">
               - Jim & Marcy Chambers
-            </p>
+            </p> </br> </br>
+            <a
+              class="google-business"
+              target="_blank"
+              href="https://www.google.ca/search?q=one+percent+guys&rlz=1C5CHFA_enCA782CA782&oq=one+percent+guys+&aqs=chrome..69i57j69i60l3.3486j0j4&sourceid=chrome&ie=UTF-8#lrd=0x882b3336fae60e37:0x606b45f4932dc845,1"
+              >CLICK HERE FOR MORE REVIEWS</a
+            >
           </div>
         </div>
       </div>
@@ -423,14 +516,71 @@
                   in what is surely the most important deal of your life!
                 </p>
               </div>
+                            <div class="wow fadeInUp" data-wow-delay="0.8s">
+                    <a
+                    class="wow fadeInUp fbtn section-btn btn btn-success"
+                    data-wow-delay="1.4s"
+                    data-fancybox
+                    data-src="#hidden-content-2"
+                    href="javascript:;"
+                    >Download Pre-Listing Orientation</a
+                  >
+  
+                  <div style="display: none;" id="hidden-content-2">
+                    <h2>Contact</h2>
+                    <form id="myForm3">
+                      <div>
+                        <input
+                          name="fullname"
+                          type="text"
+                          class="modal-form"
+                          id="modal-name"
+                          placeholder="Name"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          name="email"
+                          type="email"
+                          class="modal-form"
+                          id="modal-email"
+                          placeholder="Email"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          name="phone"
+                          type="phone"
+                          class="modal-form"
+                          id="modal-phone"
+                          placeholder="Phone Number"
+                        />
+                      </div>
+                      <div>
+                        <input
+                          name="submit"
+                          type="submit"
+                          class="modal-btn"
+                          id="submit"
+                          value="SEND"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                <!-- <a
+                  href="/images/One Percent Guys_ Pre-Listing Orientation .pdf"
+                  download
+                  ><i class="fa fa-cloud-download" aria-hidden="true"></i
+                ></a> -->
+              </div>
 
-              <a
+              <!-- <a
                 href="/images/One Percent Guys_ Pre-Listing Orientation .pdf"
                 download
                 class="wow fadeInUp section-btn btn btn-success"
                 data-wow-delay="1.4s"
                 >Download Pre-Listing Orientation</a
-              >
+              > -->
             </div>
           </div>
 
@@ -444,7 +594,7 @@
               technology.
             </p>
             <div id="contact-form">
-              <form action="#template-mo" method="post">
+              <form id="myForm4">
                 <div class="wow fadeInUp" data-wow-delay="1s">
                   <input
                     name="fullname"
@@ -472,15 +622,6 @@
                     placeholder="Phone Number"
                   />
                 </div>
-                <!-- <div class="wow fadeInUp" data-wow-delay="1.4s">
-                  <textarea
-                    name="message"
-                    rows="5"
-                    class="form-control"
-                    id="message"
-                    placeholder="Write your message..."
-                  ></textarea>
-                </div> -->
                 <div
                   class="wow fadeInUp col-md-6 col-sm-8 send-btn"
                   data-wow-delay="1.6s"
@@ -559,7 +700,9 @@
 
     <!-- SCRIPTS -->
 
+    <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.parallax.js"></script>
     <script src="js/smoothscroll.js"></script>
