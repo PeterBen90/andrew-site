@@ -85,7 +85,7 @@ $(document).ready(function() {
     setTimeout(function() {
       message.fadeOut();
     }, 2000);
-    form.find('input:not([type="submit"])').val('');
+    form.find('input:not([type="submit"]), textarea').val('');
   }
   // fail function
   function fail_func(data) {
