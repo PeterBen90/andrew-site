@@ -165,10 +165,7 @@
   
                   <div style="display: none;" id="hidden-content-2">
                     <h2>Contact</h2>
-                    <form class="contact__form" method="post" action="mail.php">
-                      <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                         Your message was sent successfully.
-                      </div>
+                    <form id="myForm">
                       <div>
                         <input
                           name="fullname"
@@ -176,7 +173,6 @@
                           class="modal-form"
                           id="modal-name"
                           placeholder="Name"
-                          required
                         />
                       </div>
                       <div>
@@ -186,7 +182,6 @@
                           class="modal-form"
                           id="modal-email"
                           placeholder="Email"
-                          required
                         />
                       </div>
                       <div>
@@ -196,14 +191,13 @@
                           class="modal-form"
                           id="modal-phone"
                           placeholder="Phone Number"
-                          required
                         />
                       </div>
                       <div>
                         <input
                           name="submit"
                           type="submit"
-                          class="modal-btn btn btn-success"
+                          class="modal-btn"
                           id="submit"
                           value="SEND"
                         />
@@ -700,7 +694,6 @@
 
     <!-- SCRIPTS -->
 
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
