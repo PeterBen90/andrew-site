@@ -70,7 +70,7 @@ $(document).ready(function() {
 
 // Form AJAX
 
-(function($) {
+$(function() {
   'use strict';
   var form = $('.contact__form'),
     message = $('.contact__msg'),
