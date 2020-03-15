@@ -92,7 +92,7 @@ function submitForm() {
 
   $.ajax({
     type: 'POST',
-    url: 'process.php',
+    url: 'php/process.php',
     data: 'fullname=' + fullname + '&email=' + email + '&phone=' + phone,
     success: function(text) {
       if (text == 'success') {
