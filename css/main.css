@@ -902,17 +902,16 @@ footer {
   height: 45px;
 }
 
-#home input[type='submit'] {
-  /* background: #ffffff; */
+#home button[type='submit'] {
   border: 3px solid #e3ae57;
   border-radius: 40px;
   color: #e3ae57;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   font-weight: bold;
   margin-top: 20px;
 }
 
-#home input[type='submit']:hover {
+#home button[type='submit']:hover {
   background: #e3ae57;
   color: #ffffff;
 }

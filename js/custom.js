@@ -68,43 +68,68 @@ $(document).ready(function() {
   new WOW({ mobile: false }).init();
 });
 
-$(document).ready(function() {
-  'use strict';
-  var form = $('.contact__form'),
-    message = $('.contact__msg'),
-    form_data;
-  // Success function
-  function done_func(response) {
-    message
-      .fadeIn()
-      .removeClass('alert-danger')
-      .addClass('alert-success');
-    message.text(response);
-    setTimeout(function() {
-      message.fadeOut();
-    }, 2000);
-  }
-  // fail function
-  function fail_func(data) {
-    message
-      .fadeIn()
-      .removeClass('alert-success')
-      .addClass('alert-success');
-    message.text(data.responseText);
-    setTimeout(function() {
-      message.fadeOut();
-    }, 2000);
-  }
+// FORM AJAX
 
-  form.submit(function(e) {
-    e.preventDefault();
-    form_data = $(this).serialize();
-    $.ajax({
-      type: 'POST',
-      url: form.attr('action'),
-      data: form_data
-    })
-      .done(done_func)
-      .fail(fail_func);
+$('#contactForm')
+  .validator()
+  .on('submit', function(event) {
+    if (event.isDefaultPrevented()) {
+      // handle the invalid form...
+      formError();
+      submitMSG(false, 'Did you fill in the form properly?');
+    } else {
+      // everything looks good!
+      event.preventDefault();
+      submitForm();
+    }
   });
-});
+
+function submitForm() {
+  // Initiate Variables With Form Content
+  var name = $('#fullname').val();
+  var email = $('#email').val();
+  var message = $('#phone').val();
+
+  $.ajax({
+    type: 'POST',
+    url: 'process.php',
+    data: 'fullname=' + fullname + '&email=' + email + '&phone=' + phone,
+    success: function(text) {
+      if (text == 'success') {
+        formSuccess();
+      } else {
+        formError();
+        submitMSG(false, text);
+      }
+    }
+  });
+}
+
+function formSuccess() {
+  $('#contactForm')[0].reset();
+  submitMSG(true, 'Message Submitted!');
+}
+
+function formError() {
+  $('#contactForm')
+    .removeClass()
+    .addClass('shake animated')
+    .one(
+      'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+      function() {
+        $(this).removeClass();
+      }
+    );
+}
+
+function submitMSG(valid, msg) {
+  if (valid) {
+    var msgClasses = 'h3 text-center tada animated text-success';
+  } else {
+    var msgClasses = 'h3 text-center text-danger';
+  }
+  $('#msgSubmit')
+    .removeClass()
+    .addClass(msgClasses)
+    .text(msg);
+}
