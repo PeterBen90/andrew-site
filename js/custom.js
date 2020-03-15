@@ -68,54 +68,43 @@ $(document).ready(function() {
   new WOW({ mobile: false }).init();
 });
 
-// Form AJAX
-
-$(function() {
-  function after_form_submitted(data) {
-    if (data.result == 'success') {
-      $('form#reused_form').hide();
-      $('#success_message').show();
-      $('#error_message').hide();
-    } else {
-      $('#error_message').append('<ul></ul>');
-
-      jQuery.each(data.errors, function(key, val) {
-        $('#error_message ul').append('<li>' + key + ':' + val + '</li>');
-      });
-      $('#success_message').hide();
-      $('#error_message').show();
-
-      //reverse the response on the button
-      $('button[type="button"]', $form).each(function() {
-        $btn = $(this);
-        label = $btn.prop('orig_label');
-        if (label) {
-          $btn.prop('type', 'submit');
-          $btn.text(label);
-          $btn.prop('orig_label', '');
-        }
-      });
-    } //else
+(function($) {
+  'use strict';
+  var form = $('.contact__form'),
+    message = $('.contact__msg'),
+    form_data;
+  // Success function
+  function done_func(response) {
+    message
+      .fadeIn()
+      .removeClass('alert-danger')
+      .addClass('alert-success');
+    message.text(response);
+    setTimeout(function() {
+      message.fadeOut();
+    }, 2000);
+  }
+  // fail function
+  function fail_func(data) {
+    message
+      .fadeIn()
+      .removeClass('alert-success')
+      .addClass('alert-success');
+    message.text(data.responseText);
+    setTimeout(function() {
+      message.fadeOut();
+    }, 2000);
   }
 
-  $('#reused_form').submit(function(e) {
+  form.submit(function(e) {
     e.preventDefault();
-
-    $form = $(this);
-    //show some response on the button
-    $('button[type="submit"]', $form).each(function() {
-      $btn = $(this);
-      $btn.prop('type', 'button');
-      $btn.prop('orig_label', $btn.text());
-      $btn.text('Sending ...');
-    });
-
+    form_data = $(this).serialize();
     $.ajax({
       type: 'POST',
-      url: 'handler.php',
-      data: $form.serialize(),
-      success: after_form_submitted,
-      dataType: 'json'
-    });
+      url: form.attr('action'),
+      data: form_data
+    })
+      .done(done_func)
+      .fail(fail_func);
   });
-});
+})(jQuery);
