@@ -68,7 +68,7 @@ $(document).ready(function() {
   new WOW({ mobile: false }).init();
 });
 
-(function($) {
+$(document).ready(function() {
   'use strict';
   var form = $('.contact__form'),
     message = $('.contact__msg'),
@@ -107,4 +107,4 @@ $(document).ready(function() {
       .done(done_func)
       .fail(fail_func);
   });
-})(jQuery);
+});
