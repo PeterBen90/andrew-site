@@ -70,66 +70,37 @@ $(document).ready(function() {
 
 // FORM AJAX
 
-$('#contactForm')
-  .validator()
-  .on('submit', function(event) {
-    if (event.isDefaultPrevented()) {
-      // handle the invalid form...
-      formError();
-      submitMSG(false, 'Did you fill in the form properly?');
-    } else {
-      // everything looks good!
-      event.preventDefault();
-      submitForm();
-    }
+(function($) {
+  // Select the form and form message
+  var form = $('#ajax-contact-form'),
+    form_messages = $('#form-messages');
+
+  // Action at on submit event
+  $(form).on('submit', function(e) {
+    e.preventDefault(); // Stop browser loading
+
+    // Get form data
+    var form_data = $(form).serialize();
+
+    // Send Ajax Request
+    var the_request = $.ajax({
+      type: 'POST', // Request Type POST, GET, etc.
+      url: 'contact.php',
+      data: form_data
+    });
+
+    // At success
+    the_request.done(function(data) {
+      form_messages.text('Success: ' + data);
+
+      // Do other things at success
+    });
+
+    // At error
+    the_request.done(function() {
+      form_messages.text('Error: ' + data);
+
+      // Do other things at fails
+    });
   });
-
-function submitForm() {
-  // Initiate Variables With Form Content
-  var name = $('#fullname').val();
-  var email = $('#email').val();
-  var message = $('#phone').val();
-
-  $.ajax({
-    type: 'POST',
-    url: 'php/process.php',
-    data: 'fullname=' + fullname + '&email=' + email + '&phone=' + phone,
-    success: function(text) {
-      if (text == 'success') {
-        formSuccess();
-      } else {
-        formError();
-        submitMSG(false, text);
-      }
-    }
-  });
-}
-
-function formSuccess() {
-  $('#contactForm')[0].reset();
-  submitMSG(true, 'Message Submitted!');
-}
-
-function formError() {
-  $('#contactForm')
-    .removeClass()
-    .addClass('shake animated')
-    .one(
-      'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-      function() {
-        $(this).removeClass();
-      }
-    );
-}
-
-function submitMSG(valid, msg) {
-  if (valid) {
-    var msgClasses = 'h3 text-center tada animated text-success';
-  } else {
-    var msgClasses = 'h3 text-center text-danger';
-  }
-  $('#msgSubmit')
-    .removeClass()
-    .addClass(msgClasses)
-    .text(msg);
-}
+})(jQuery);

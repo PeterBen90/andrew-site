@@ -92,16 +92,15 @@
             <h1 class="wow fadeInUp" data-wow-delay="0.6s">
               Get Started
             </h1>
-            <div class="row">
-              <form role="form" id="contactForm" data-toggle="validator" class="shake">
+            <div>
+              <form id="ajax-contact-form" method="post" action="contact.php">
                 <div class="wow fadeInUp form-group" data-wow-delay="1s">
                   <input
-                    name="fullname"
+                    name="name"
                     type="text"
                     class="form-control"
-                    id="fullname"
-                    placeholder="Name"
-                    data-error="Please fill in field"
+                    id="name"
+                    placeholder="Full Name"
                     required
                   />
                   <div class="help-block with-errors"></div>
@@ -113,7 +112,6 @@
                     class="form-control"
                     id="email"
                     placeholder="Email"
-                    data-error="Please fill in field"
                     required
                   />
                   <div class="help-block with-errors"></div>
@@ -125,7 +123,6 @@
                     class="form-control"
                     id="phone"
                     placeholder="Phone Number"
-                    data-error="Please fill in field"
                     required
                   />
                   <div class="help-block with-errors"></div>
@@ -134,18 +131,17 @@
                   class="wow fadeInUp col-md-6 col-sm-8 send-btn form-group"
                   data-wow-delay="1.6s"
                 >
-                  <button
+               <button
                   name="submit"
                   type="submit"
-                  class="form-control btn btn-success btn-lg pull-right"
-                  id="form-submit"
+                  class="form-control"
+                  id="submit"
                   >
                   SEND
-                 </button>
-                 <div id="msgSubmit" class="h3 text-center hidden"></div>
-                 <div class="clearfix"></div>
-                </div>
+               </button>
+               </div>
               </form>
+              <div id="form-messages"></div>
               
             </div>
 
@@ -709,7 +705,6 @@
 
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/validator.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.parallax.js"></script>
