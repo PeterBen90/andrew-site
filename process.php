@@ -6,7 +6,7 @@ $errorMSG = "";
 if (empty($_POST["fullname"])) {
     $errorMSG = "Name is required ";
 } else {
-    $name = $_POST["fullname"];
+    $fullname = $_POST["fullname"];
 }
 
 // EMAIL
@@ -20,7 +20,7 @@ if (empty($_POST["email"])) {
 if (empty($_POST["phone"])) {
     $errorMSG .= "Phone is required ";
 } else {
-    $message = $_POST["phone"];
+    $phone = $_POST["phone"];
 }
 
 
