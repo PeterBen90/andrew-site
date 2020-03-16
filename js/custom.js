@@ -68,9 +68,60 @@ $(document).ready(function() {
   new WOW({ mobile: false }).init();
 });
 
-// Download
+// Download Form 1
 
 $('#contact-form1').submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr('action'), $form.serialize()).then(function() {
+    var file_path = 'images/OnePercentGuys_Pre-ListingOrientation.pdf';
+    var a = document.createElement('A');
+    a.href = file_path;
+    a.download = file_path.substr(file_path.lastIndexOf('/') + 1);
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
+
+// Download Form 2
+
+$('#contact-form2').submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr('action'), $form.serialize()).then(function() {
+    var file_path = 'images/OnePercentGuys_Pre-ListingOrientation.pdf';
+    var a = document.createElement('A');
+    a.href = file_path;
+    a.download = file_path.substr(file_path.lastIndexOf('/') + 1);
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
+
+// Download Form 3
+
+$('#contact-form3').submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr('action'), $form.serialize()).then(function() {
+    var file_path = 'images/OnePercentGuys_Pre-ListingOrientation.pdf';
+    var a = document.createElement('A');
+    a.href = file_path;
+    a.download = file_path.substr(file_path.lastIndexOf('/') + 1);
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  });
+});
+
+// Download Form 4
+
+$('#contact-form4').submit(function(e) {
   e.preventDefault();
 
   var $form = $(this);
