@@ -69,8 +69,3 @@ $(document).ready(function() {
 });
 
 // Download
-
-$('#submit').click(function(e) {
-  e.preventDefault(); //stop the browser from following
-  window.location.href = 'images/OnePercentGuys_Pre-ListingOrientation.pdf';
-});
