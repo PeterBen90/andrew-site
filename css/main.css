@@ -768,6 +768,11 @@ footer {
   #contact-form1 {
     padding-right: 0px !important;
   }
+
+  .navbar-brand>img {
+    height: 30px !important;
+  }
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1011,7 +1016,7 @@ footer {
   padding-right: 150px;
 }
 
-.logo {
+.navbar-brand>img {
   height: 50px;
   width: auto;
 }
