@@ -75,7 +75,6 @@ $('#contact-form1').submit(function(e) {
 
   var $form = $(this);
   $.post($form.attr('action'), $form.serialize()).then(function() {
-    alert('Thank you!');
     // if the ok button is clicked, result will be true (boolean)
     var result = confirm('Thank you!');
 
@@ -84,7 +83,6 @@ $('#contact-form1').submit(function(e) {
       $('#download').trigger('click');
     } else {
       // the user clicked cancel or closed the confirm dialog.
-      console.log('did not work');
     }
   });
 });
