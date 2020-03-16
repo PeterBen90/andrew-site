@@ -75,6 +75,7 @@ $('#contact-form1').submit(function(e) {
 
   var $form = $(this);
   $.post($form.attr('action'), $form.serialize()).then(function() {
-    $('#download').click();
+    alert('Thank you!');
+    $('#download').trigger('click');
   });
 });
