@@ -1010,3 +1010,8 @@ footer {
 #contact-form1 {
   padding-right: 150px;
 }
+
+.logo {
+  height: 50px;
+  width: auto;
+}
