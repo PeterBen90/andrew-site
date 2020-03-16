@@ -74,7 +74,15 @@ $('#my-forcontact-form1').submit(function(e) {
   e.preventDefault();
 
   var $form = $(this);
+  var myEl = document.getElementById('download');
+
   $.post($form.attr('action'), $form.serialize()).then(function() {
-    $('#download').click();
+    myEl.addEventListener(
+      'click',
+      function() {
+        alert('Hello world');
+      },
+      false
+    );
   });
 });
