@@ -70,19 +70,11 @@ $(document).ready(function() {
 
 // Download
 
-$('#my-forcontact-form1').submit(function(e) {
+$('#contact-form1').submit(function(e) {
   e.preventDefault();
 
   var $form = $(this);
-  var myEl = document.getElementById('download');
-
   $.post($form.attr('action'), $form.serialize()).then(function() {
-    myEl.addEventListener(
-      'click',
-      function() {
-        alert('Hello world');
-      },
-      false
-    );
+    alert('Thank you!');
   });
 });
