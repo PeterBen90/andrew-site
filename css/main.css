@@ -520,7 +520,7 @@ a:focus {
 #contact .contact-thumb {
   padding: 22px 32px 22px 32px;
   min-height: 75vh;
-  margin-bottom: 95px;
+  /* margin-bottom: 95px; */
 }
 
 /* #contact .contact-thumb {
@@ -997,5 +997,9 @@ footer {
 
 .dld-title {
   font-size: 30px;;
+}
+
+.form-txt {
+  font-size: 13px;
 }
 
