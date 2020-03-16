@@ -75,14 +75,8 @@ $('#contact-form1').submit(function(e) {
 
   var $form = $(this);
   $.post($form.attr('action'), $form.serialize()).then(function() {
-    // if the ok button is clicked, result will be true (boolean)
-    var result = confirm('Thank you!');
-
-    if (result) {
-      // the user clicked ok
-      $('#download').trigger('click');
-    } else {
-      // the user clicked cancel or closed the confirm dialog.
-    }
+    $.fileDownload('images/OnePercentGuys_Pre-ListingOrientation.pdf')
+      .done(function () { alert('File download a success!'); })
+      .fail(function () { alert('File download failed!'); });
   });
 });
