@@ -133,7 +133,7 @@ p {
 
 #experience .experience-thumb,
 #education .education-thumb {
-  padding: 22px 42px 42px 42px;
+  padding: 22px 42px 142px 42px;
 }
 
 #service,
@@ -593,7 +593,7 @@ a:focus {
 -----------------------------------------*/
 
 footer {
-  padding: 140px 0px;
+  padding: 80px 0px;
 }
 
 /*---------------------------------------
@@ -785,7 +785,7 @@ footer {
 }
 
 .education-thumb {
-  padding-bottom: 20% !important;
+  padding-bottom: 25% !important;
 }
 
 .media {
