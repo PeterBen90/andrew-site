@@ -39,9 +39,10 @@ h1 {
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 30px;
   line-height: 52px;
   margin-top: 0px;
+  text-align: center;
 }
 
 h3 {
@@ -763,6 +764,10 @@ footer {
   #contact button[type='submit'] {
     width: 100%;
   }
+
+  #contact-form1 {
+    padding-right: 0px !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -1002,3 +1007,6 @@ footer {
   font-size: 13px;
 }
 
+#contact-form1 {
+  padding-right: 150px;
+}
