@@ -75,8 +75,6 @@ $('#contact-form1').submit(function(e) {
 
   var $form = $(this);
   $.post($form.attr('action'), $form.serialize()).then(function() {
-    $.fileDownload('images/OnePercentGuys_Pre-ListingOrientation.pdf')
-      .done(function () { alert('File download a success!'); })
-      .fail(function () { alert('File download failed!'); });
+    $.fileDownload('images/OnePercentGuys_Pre-ListingOrientation.pdf');
   });
 });
