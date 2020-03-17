@@ -657,7 +657,7 @@ footer {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
   .custom-navbar .navbar-brand {
     line-height: 18px;
   }
@@ -689,6 +689,10 @@ footer {
   .background-image {
     position: relative;
     min-height: 65vh;
+  }
+
+  #experience .experience-thumb {
+    padding: 22px 42px 22px 42px;
   }
 }
 
@@ -968,7 +972,7 @@ footer {
 }
 
 #hidden-content-2 .form-control:focus {
-  border-bottom-color: #fff;
+  border-bottom-color: #e3ae57;
 }
 
 #submit:focus {
@@ -1000,8 +1004,8 @@ footer {
   margin-top: 50px;
 }
 
-.andrew {
-  padding-top: 65px;
+.site-padding {
+  padding-bottom: 65px;
 }
 
 .dld-title {
@@ -1013,7 +1017,7 @@ footer {
 }
 
 #contact-form1 {
-  padding-right: 150px;
+  padding-right: 250px;
 }
 
 .navbar-brand>img {
