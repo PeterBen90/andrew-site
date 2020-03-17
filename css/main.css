@@ -1003,3 +1003,8 @@ footer {
   height: 50px;
   width: auto;
 }
+
+.sales-rep {
+  margin-top: -15px;
+  margin-bottom: 15px;
+}
