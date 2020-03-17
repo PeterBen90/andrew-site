@@ -694,6 +694,10 @@ footer {
   #experience .experience-thumb {
     padding: 22px 42px 22px 42px;
   }
+
+  #contact-form1 {
+    padding-right: 0px !important;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
