@@ -100,7 +100,7 @@ $('#contact-form2').submit(function(e) {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    $('.success').prop('hidden', false);
+    $('.success2').prop('hidden', false);
   });
 });
 
@@ -118,7 +118,7 @@ $('#contact-form3').submit(function(e) {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
-    $('.success').prop('hidden', false);
+    $('.success3').prop('hidden', false);
   });
 });
 
