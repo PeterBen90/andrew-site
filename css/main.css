@@ -1018,7 +1018,9 @@ footer {
   margin-bottom: 2px;
 }
 
-.success {
+.success,
+.success2,
+.success3 {
   color: red;
 }
 
