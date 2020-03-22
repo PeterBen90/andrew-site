@@ -82,6 +82,7 @@ $('#contact-form1').submit(function(e) {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+    $('.success').prop('hidden', false);
   });
 });
 
