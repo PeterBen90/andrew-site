@@ -791,11 +791,11 @@ footer {
 
 .head {
   font-size: 18px;
+  font-weight: 500;
 }
 
 #service p {
-  font-size: 13px;
-  font-weight: 500;
+  font-size: 15px;
 }
 
 .test {
@@ -1011,4 +1011,21 @@ footer {
 .sales-rep {
   margin-top: -15px;
   margin-bottom: 15px;
+}
+
+#experience .media-heading {
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+.success {
+  color: red;
+}
+
+.intro {
+  color: black;
+}
+
+.quests {
+  color: black;
 }
