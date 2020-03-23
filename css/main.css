@@ -1031,3 +1031,7 @@ footer {
 .quests {
   color: black;
 }
+
+.bullet {
+  font-size: 15px;
+}
