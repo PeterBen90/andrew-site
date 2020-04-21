@@ -90,6 +90,11 @@ p {
   margin-top: 42px;
   transition: all 0.4s ease-in-out;
   text-transform: uppercase;
+  margin-left: 25%;
+}
+
+.margin-btn {
+  margin-left: 0;
 }
 
 .section-btn:hover {
@@ -745,7 +750,8 @@ footer {
   }
 
   .section-btn {
-    padding: 15px;
+    width: 100%;
+    margin-left: 0;
   }
 
   .experience-img {
