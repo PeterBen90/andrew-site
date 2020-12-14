@@ -794,7 +794,7 @@ footer {
 
 @media only screen and (max-width: 1024px) {
 	.experience-img {
-		min-height: 47vh;
+		min-height: 42vh;
 	}
 }
 
