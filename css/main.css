@@ -676,9 +676,13 @@ footer {
 	}
 
 	#home .home-thumb {
-		height: auto;
+		height: 100vh;
 		padding-top: 32px;
 		padding-bottom: 12px;
+	}
+
+	.section-btn {
+		margin-left: 15%;
 	}
 
 	#home .container,
@@ -710,6 +714,10 @@ footer {
 
 	#contact-form1 {
 		padding-right: 0px !important;
+	}
+
+	.skill-thumb {
+		padding: 0px !important;
 	}
 }
 
