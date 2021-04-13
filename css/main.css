@@ -1,6 +1,6 @@
 body {
 	background: #ffffff;
-	font-family: "Source Sans Pro", sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-style: normal;
 	font-weight: 300;
 	overflow-x: hidden;
@@ -246,7 +246,7 @@ a:focus {
 }
 
 .spinner:before {
-	content: "";
+	content: '';
 	box-sizing: border-box;
 	position: absolute;
 	top: 50%;
@@ -360,7 +360,7 @@ a:focus {
 }
 
 #home .home-img {
-	background: url("../images/city.jpg") no-repeat;
+	background: url('../images/city.jpg') no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
 	width: 100%;
@@ -385,7 +385,7 @@ a:focus {
 -----------------------------------------*/
 
 #about .about-img {
-	background: url("../images/kitchen.jpeg") no-repeat;
+	background: url('../images/kitchen.jpeg') no-repeat;
 	min-height: 40vh !important;
 }
 
@@ -443,7 +443,7 @@ a:focus {
 -----------------------------------------*/
 
 #experience .experience-img {
-	background: url("../images/team.png") no-repeat;
+	background: url('../images/team.png') no-repeat;
 }
 
 #experience .media-heading {
@@ -469,7 +469,7 @@ a:focus {
 }
 
 #education .education-img {
-	background: url("../images/door.jpg") no-repeat;
+	background: url('../images/door.jpg') no-repeat;
 }
 
 #education .media-heading {
@@ -491,7 +491,7 @@ a:focus {
 -----------------------------------------*/
 
 #quotes {
-	background: url("../images/quotes-bg.jpg") 50% 0 repeat-y fixed;
+	background: url('../images/quotes-bg.jpg') 50% 0 repeat-y fixed;
 	background-size: cover;
 	background-position: center center;
 	color: #ffffff;
@@ -537,7 +537,7 @@ a:focus {
 } */
 
 #contact .contact-img {
-	background: url("../images/andrew.jpg") no-repeat;
+	background: url('../images/andrew.jpg') no-repeat;
 	min-height: 75vh;
 }
 
@@ -578,7 +578,7 @@ a:focus {
 	height: 45px;
 }
 
-#contact button[type="submit"] {
+#contact button[type='submit'] {
 	/* background: #ffffff; */
 	border: 3px solid #e3ae57;
 	border-radius: 40px;
@@ -589,7 +589,7 @@ a:focus {
 	width: 60%;
 }
 
-#contact button[type="submit"]:hover {
+#contact button[type='submit']:hover {
 	background: #e3ae57;
 	color: #ffffff;
 }
@@ -795,12 +795,12 @@ footer {
 		width: auto !important;
 	}
 
-	#hidden-content-2 input[type="submit"] {
+	#hidden-content-2 input[type='submit'] {
 		display: block;
 		width: 100%;
 	}
 
-	#contact button[type="submit"] {
+	#contact button[type='submit'] {
 		width: 100%;
 	}
 
@@ -878,7 +878,7 @@ footer {
 	transform: translateY(0);
 }
 
-#hidden-content-2 button[type="submit"] {
+#hidden-content-2 button[type='submit'] {
 	background-color: transparent;
 	color: rgb(227, 174, 87);
 	font-size: 13px;
@@ -896,7 +896,7 @@ footer {
 	transition: all 0.4s ease-in-out;
 }
 
-#hidden-content-2 button[type="submit"]:hover {
+#hidden-content-2 button[type='submit']:hover {
 	background: #e3ae57;
 	color: #fff;
 	transition: all 0.4s ease-in-out;
@@ -937,7 +937,7 @@ footer {
 	height: 45px;
 }
 
-#home button[type="submit"] {
+#home button[type='submit'] {
 	border: 3px solid #e3ae57;
 	border-radius: 40px;
 	color: #e3ae57;
@@ -946,7 +946,7 @@ footer {
 	margin-top: 20px;
 }
 
-#home button[type="submit"]:hover {
+#home button[type='submit']:hover {
 	background: #e3ae57;
 	color: #ffffff;
 }
@@ -995,7 +995,7 @@ footer {
 	height: 45px;
 }
 
-#hidden-content-2 button[type="submit"] {
+#hidden-content-2 button[type='submit'] {
 	border: 3px solid #e3ae57;
 	border-radius: 40px;
 	color: #e3ae57;
@@ -1003,7 +1003,7 @@ footer {
 	font-weight: bold;
 	margin-top: 30px;
 }
-#hidden-content-2 button[type="submit"]:hover {
+#hidden-content-2 button[type='submit']:hover {
 	background: #e3ae57;
 	color: #ffffff;
 }
@@ -1064,10 +1064,10 @@ footer {
 .bullet {
 	font-size: 15px;
 }
-
+/* 
 .padding {
 	padding-bottom: 30px;
-}
+} */
 
 .catch {
 	font-weight: 500;
